@@ -1,0 +1,8 @@
+---
+
+- name: "untar the backend app file"
+  become_user: ubuntu
+  become: yes
+  unarchive:
+    src: ~/project/backend.tar
+    dest: ~/
